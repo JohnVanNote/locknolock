@@ -1,0 +1,20 @@
+I enjoyed this lab, it was fun building threaded programs and learning about
+locks and whatnot. My program has been tested with various input, I kept it
+all to one file so that the program would be easier to manage.
+
+In order to run the program with no lock type:
+make noLock
+
+In order to run the program with the lock inside the for-loop type:
+make lockIn
+
+In orer to run the program with the lock outside the for-loop type:
+make lockOut
+
+The findings I've had are the noLock program will be the fastest (barely
+faster than lockOut) but there is no guarantee that there will be 1,000,000
+"turnstile counts". lockIn and lockOut guarantee there will be 1,000,000
+counts but lockIn is painfully slower.
+
+Each program outputs the average count and total time spent running, which
+is equivalent to running the function 10x.
